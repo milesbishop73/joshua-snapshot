@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-06T22:03:06Z",
+  "generated_at_utc": "2026-04-12T08:07:54Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -20,7 +20,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -1
+        "DEPLOY": -7
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -63,7 +63,44 @@
         "Capital_Sufficient": true,
         "Portfolio_Heat_Pct": 0,
         "Monitoring_Items": "CRYPTO: Monitor BTC vs 200DMA daily — regime must shift to BULL or BEAR for algo gate to open. TRANSITION regime blocks all deployment.; IPO SHORTS: APXT lock-up expiry 2026-04-25 remains on watch. Sub-committee returned DO NOT PROCEED with high conviction (5/5) but only 67% consensus — investigate dissenting analyst rationale before next session. Days to entry = 0 suggests entry window is live but committee blocked; clarify whether this is a timing, liquidity, or risk-factor veto.; GDXJ: BROKEN regime persists. Monitor GLD, TIP, and VIX gate legs for regime recovery. No action possible until at least two of three gate legs confirm.; PRIORITY HIERARCHY: All three silos remain well below 25 filtered trades threshold. Provisional A-040 hierarchy (IPO → GDXJ → Crypto) remains in effect. Flag for revalidation when any silo approaches 25 filtered trades.; CAPITAL: £48 total, £0 deployed, full availability confirmed. No exchange exposure or deployment cap concerns at this time.",
-        "Updated_At": "2026-04-07T05:02:00Z"
+        "Updated_At": "2026-04-07T05:02:00Z",
+        "Session_Health": "",
+        "LLM_Failures": "",
+        "Deputy_Challenge": "",
+        "Deputy_Severity": ""
+      },
+      {
+        "Session_ID": "20260412_IC",
+        "Session_Date": "2026-04-12T07:00:00Z",
+        "Regime_Consensus": "Crypto: UNCERTAIN/UNCERTAIN/CRASH | IPO: CAUTIOUS | GDXJ: BROKEN",
+        "Crypto_Gate": "CLOSED",
+        "Crypto_Verdict": "BLOCKED",
+        "Crypto_Candidate": "",
+        "Crypto_Lead": "N/A",
+        "Crypto_Bear": "N/A",
+        "Crypto_Independent": "N/A",
+        "Crypto_SubChair": "N/A",
+        "IPO_Verdict": "DO NOT PROCEED",
+        "IPO_Candidate": "DNMX (lock-up: 2026-04-27)",
+        "GDXJ_Verdict": "BLOCKED",
+        "Reserved": "",
+        "Timestamp": "2026-04-12T12:46:00Z",
+        "Chair_Verdict": "DO NOT PROCEED",
+        "Chair_Executive_Summary": "All three silos are blocked this session: Crypto is in a macro headwind regime with its gate closed, Junior Mining is in a broken regime with no valid data, and the IPO Shorts sub-committee returned a do-not-proceed on DNMX with very low conviction of 1 out of 5. No capital is deployed and no trades are authorised today. The most important near-term catalyst to watch is DNMX, whose lock-up expires on 27 April 2026 — fifteen days from now — and which could become actionable if the IPO sub-committee conviction rises to at least 3 out of 5 in sessions approaching that date. For any silo to proceed, its regime must recover and its gate must open with sufficient analyst conviction.",
+        "Chair_Governance_Record": "Session 20260412_IC — Main Committee Chair Final Briefing (post Deputy Chair challenge). Date: 2026-04-12. Total capital: £48. Deployed: £0. Available: £48. Deployment cap (90%): £43. Cooldown tier: NORMAL (100% of Fixed Bet). Capital Gate: 100% tier — no capital restriction applies. Kill Switch proximity metrics confirmed clear: Loss 0% vs 40% threshold (CLEAR); Win rate N/A vs 30% minimum (no completed trades, not triggered); Max gain 0% vs 100% threshold (CLEAR); Trades completed 0 vs 24/36 thresholds (well within bounds). No open positions. Portfolio heat: 0%.\n\n(1) SILO GATE STATUS AND REGIMES:\nCrypto Mid-Cap Spot: Regime MACRO_HEADWIND (0% allocation). Algo gate CLOSED. BTC vs 200DMA and 90-day return data unavailable this session. Verdict: GATE BLOCKED. No deployment possible.\nIPO Lock-Up Shorts: Regime not gate-blocked by regime classification, but sub-committee returned DO NOT PROCEED with conviction 1/5 and 100% consensus on that low conviction. Candidate DNMX has lock-up expiry 2026-04-27 — this is 15 calendar days from today (2026-04-12). The lock-up has NOT yet expired. Entry window is not yet open.\nJunior Mining GDXJ: Regime BROKEN. All gate legs (GLD, TIP, VIX) returning N/A. Verdict: GATE BLOCKED. No deployment possible.\n\n(2) SUB-COMMITTEE VERDICTS:\nAll three silos returned either DO NOT PROCEED or GATE BLOCKED. No silo issued a PROCEED or CONDITIONAL verdict. Per verdict rules, the Main Committee verdict is DO NOT PROCEED.\n\n(3) CONTENTION ANALYSIS:\nNo contention applicable. No silo reached PROCEED status. A-040 contention rules are noted for record but not triggered this session. Crypto coexistence rule noted: crypto uses independent Kraken capital and does not compete with TradFi (IG) capital pool.\n\n(4) CAPITAL SUFFICIENCY AND EXCHANGE CAPS:\nNo deployment occurring. Exchange exposure cap (70% on any single exchange) is not at risk. 30% permanent off-exchange reserve (Revolut) is intact. All constraints satisfied.\n\n(5) PORTFOLIO HEAT:\nZero positions open. Portfolio heat 0%. No heat concern.\n\n(6) STANDING MONITORING ITEMS:\nDNMX lock-up expiry 2026-04-27 (15 days). GDXJ regime recovery watch. Crypto regime and gate watch. Kill switch and cooldown tier confirmed clear. Priority hierarchy revalidation not yet triggered (0 filtered trades across all silos). A-040 provisional hierarchy on record.",
+        "Contention_Applied": false,
+        "Contention_Detail": "",
+        "Rules_Cited": "A-040",
+        "Bull_Override_Checked": false,
+        "Bull_Override_Result": "",
+        "Capital_Sufficient": true,
+        "Portfolio_Heat_Pct": 0,
+        "Monitoring_Items": "DNMX (IPO Shorts): Lock-up expiry 2026-04-27 is 15 days away as of 2026-04-12. Entry window has NOT yet opened. Sub-committee returned DO NOT PROCEED with conviction 1/5. Re-examine conviction in sessions approaching 2026-04-27; a minimum of 3/5 conviction and consensus shift required before PROCEED can be issued.; Crypto Mid-Cap: MACRO_HEADWIND regime and algo gate CLOSED. BTC/200DMA data unavailable this session. Monitor for regime upgrade and gate re-opening before any crypto deployment is considered.; Junior Mining GDXJ: Regime BROKEN, all gate legs (GLD, TIP, VIX) returning N/A. No deployment possible until regime recovers and gate legs confirm. Monitor GLD trend, TIP real-rate signal, and VIX normalisation.; Kill Switch proximity: Loss 0% vs 40% threshold — CLEAR. Win rate 0% vs 30% minimum threshold — N/A (no completed trades). Max gain 0% vs 100% threshold — CLEAR. Trades completed: 0 vs 24/36 thresholds — well within bounds. No kill switch concern this session.; Cooldown tier: NORMAL (100% of Fixed Bet). No sizing restriction applies.; Capital Gate: 100% tier active. Full deployment capacity up to 90% cap (£43 of £48) is available subject to silo gates opening.; Priority hierarchy revalidation: All silos at 0 filtered trades. No silo approaching 25-trade revalidation threshold. No action required this session.; A-040 provisional hierarchy remains: IPO Shorts → Junior Mining GDXJ → Crypto Mid-Cap for TradFi (IG) capital. Crypto uses independent Kraken capital.",
+        "Updated_At": "2026-04-12T12:46:00Z",
+        "Session_Health": "CLEAN",
+        "LLM_Failures": "",
+        "Deputy_Challenge": "CHALLENGE",
+        "Deputy_Severity": "LOW"
       }
     ],
     "Config": [
@@ -1014,6 +1051,78 @@
       },
       {
         "Timestamp": "2026-04-06T22:01:12Z",
+        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "CLOSED",
+        "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-04-07T13:25:32Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-07T07:00:00Z",
+        "Reference_ID": "3 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: DNMX lock-up expiry 27 Apr (20d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: CIK_2079292 lock-up expiry 27 Apr (20d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: CEPV lock-up expiry 02 May (25d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-07T14:59:16Z",
+        "Action_Type": "CAPITAL_CHECK",
+        "Source": "Total: £48.05",
+        "Reference_ID": "Kraken: £10.00 | IG: £20.00 | Revolut: £18.05 (manual)",
+        "Description": "Deployable: £43.24 | Fixed Bet: £1000",
+        "Outcome": "Apps Script v1.0"
+      },
+      {
+        "Timestamp": "2026-04-08T13:25:31Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-08T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: CEPV lock-up expiry 02 May (24d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-09T13:25:28Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-09T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: CEPV lock-up expiry 02 May (23d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-10T13:25:28Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-10T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: CEPV lock-up expiry 02 May (22d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-11T13:25:29Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-11T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-12T05:43:26Z",
+        "Action_Type": "REGIME_ORCHESTRATOR",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "2W:UNCERTAIN, 1M:UNCERTAIN, 3M:CRASH",
+        "Outcome": "3 timeframes assessed in 87s"
+      },
+      {
+        "Timestamp": "2026-04-12T05:44:29Z",
+        "Action_Type": "REGIME_SYNTHESIS",
+        "Source": "MACRO_HEADWIND",
+        "Reference_ID": "LOW | DIVERGING | Avg conviction: 1/5",
+        "Description": "3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.",
+        "Outcome": "Apps Script: runRegimeSynthesis()"
+      },
+      {
+        "Timestamp": "2026-04-12T05:44:37Z",
         "Action_Type": "CRYPTO_DATA_ASSEMBLER",
         "Source": "S0",
         "Reference_ID": "CRYPTO",
