@@ -1,9 +1,35 @@
 {
-  "generated_at_utc": "2026-04-12T08:07:54Z",
+  "generated_at_utc": "2026-04-16T13:29:33Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
-    "Trade Book": [],
+    "Trade Book": [
+      {
+        "trade_id": "TEST_20260415_001",
+        "action_type": "ENTRY",
+        "silo": "CRYPTO",
+        "platform": "KRAKEN",
+        "instrument": "NEARUSD",
+        "direction": "LONG",
+        "size": 0.1,
+        "entry_price": "",
+        "stop_price": "",
+        "ic_session_id": "TEST_IC",
+        "ic_session_date": "2026-04-15T07:00:00Z",
+        "trigger_type": "IMMEDIATE",
+        "trigger_expiry": "2026-04-20T07:00:00Z",
+        "exit_trigger": "",
+        "exit_rationale": "",
+        "status": "FAILED",
+        "exit_price": "",
+        "pnl": "",
+        "pnl_pct": "",
+        "hold_days": "",
+        "notes": "",
+        "notional_gbp": 1,
+        "paper_trade": false
+      }
+    ],
     "IC_Briefings": [],
     "Tab 9A - Regime History": [
       {
@@ -20,7 +46,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -7
+        "DEPLOY": -11
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -101,6 +127,39 @@
         "LLM_Failures": "",
         "Deputy_Challenge": "CHALLENGE",
         "Deputy_Severity": "LOW"
+      },
+      {
+        "Session_ID": "20260415_IC",
+        "Session_Date": "2026-04-15T07:00:00Z",
+        "Regime_Consensus": "Crypto: UNKNOWN/UNKNOWN/UNKNOWN | IPO: UNKNOWN | GDXJ: UNKNOWN",
+        "Crypto_Gate": "OPEN",
+        "Crypto_Verdict": "DO NOT PROCEED",
+        "Crypto_Candidate": "AAVE ($102.85, 7d: 7.8%)",
+        "Crypto_Lead": "DO NOT PROCEED (4)",
+        "Crypto_Bear": "DO NOT PROCEED (5)",
+        "Crypto_Independent": "DO NOT PROCEED (5)",
+        "Crypto_SubChair": "DO NOT PROCEED (5)",
+        "IPO_Verdict": "DO NOT PROCEED",
+        "IPO_Candidate": "CEPV (lock-up: 2026-05-02)",
+        "GDXJ_Verdict": "UNKNOWN",
+        "Reserved": "",
+        "Timestamp": "2026-04-15T20:47:00Z",
+        "Chair_Verdict": "DO NOT PROCEED",
+        "Chair_Executive_Summary": "No trades are being deployed this session. All three silos returned non-proceed verdicts: Crypto is blocked by a MACRO_HEADWIND regime, IPO Shorts failed the consensus threshold despite maximum analyst conviction, and Junior Mining returned an anomalous UNKNOWN verdict despite passing all gate checks. For reconsideration, the most actionable change would be the IPO sub-committee achieving the required consensus threshold on CEPV before its lock-up expiry on 2 May 2026, or the GDXJ sub-committee resolving its procedural anomaly and returning a valid verdict. A formal governance gap has been raised requiring all silo administrators to begin reporting cumulative filtered trade counts each session.",
+        "Chair_Governance_Record": "Session 20260415_IC — Main Committee Chair Final Briefing (post Deputy Chair challenge, severity MEDIUM, all points addressed).\n\n(1) SILO GATE STATUS AND REGIMES:\nCrypto Mid-Cap Spot: Regime MACRO_HEADWIND, allocation 0%. Algo gate CLOSED. BTC vs 200DMA and 90-day return data not supplied — silo administrator to confirm whether this is expected under MACRO_HEADWIND or a reporting gap. GDXJ: All three gate legs passed (GLD=PASS, TIP=PASS, VIX=PASS) but sub-committee returned UNKNOWN verdict with 0/5 conviction and N/A consensus. Gate passage without a verdict is a procedural anomaly requiring investigation. IPO Lock-Up Shorts: No gate leg data reported; sub-committee proceeded to verdict.\n\n(2) SUB-COMMITTEE VERDICTS:\nCrypto Mid-Cap Spot: DO NOT PROCEED. Conviction 5/5, consensus 100%. Candidate AAVE ($102.85, +7.8% 7d) was identified but regime gate blocks deployment. Verdict is binding — Chair cannot override. IPO Lock-Up Shorts: DO NOT PROCEED. Conviction 5/5, consensus 67%. Candidate CEPV (lock-up expiry 2026-05-02, days to entry 0). Failure mode is consensus threshold only — conviction is not the limiting factor. Required consensus threshold must be confirmed in writing by silo administrator for audit clarity. Verdict is binding. GDXJ: UNKNOWN. Conviction 0/5, consensus N/A. Not a PROCEED; treated as non-deployable this session.\n\n(3) CONTENTION ANALYSIS:\nNo contention applicable. No silo returned PROCEED. A-040 priority hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) was not triggered. Crypto coexistence rule not triggered. Bull Override (A-040 Rule 4) evaluated: crypto regime is MACRO_HEADWIND (not BULL) and algo gate is CLOSED — both required conditions absent. Override inapplicable. Check was performed and cleared, not skipped.\n\n(4) CAPITAL SUFFICIENCY:\nTotal capital £48. Deployment cap 90% = £43.20. Available £48. 30% permanent off-exchange reserve (Revolut) = £14.40. Exchange exposure cap 70% = £33.60. Capital Gate fully open at 100%. No capital constraint would have blocked deployment had any silo returned PROCEED. Capital sufficiency confirmed.\n\n(5) PORTFOLIO HEAT:\nZero open positions confirmed explicitly. No hold expiry monitoring required. Portfolio heat 0%. Maximum 3 simultaneous positions — constraint not approached.\n\n(6) KILL SWITCH AND OPERATIONAL CHECKS:\nKill Switch framework assessed: all four metrics (loss %, win rate %, max gain %, trades completed) are at zero or baseline. No Kill Switch proximity threat. Cooldown tier NORMAL — no additional sizing restrictions beyond deployment cap. Capital Gate 100% open — confirmed non-restrictive.\n\n(7) GOVERNANCE GAP — PRIORITY HIERARCHY REVALIDATION:\nThe A-040 provisional priority hierarchy revalidation trigger (25 filtered trades per silo) cannot be tracked because silo administrators have not reported running trade totals. This is elevated from a monitoring note to a formal governance gap. All three silo administrators must report cumulative filtered trade counts each session effective immediately.\n\n(8) VERDICT:\nAll three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN). Verdict is DO NOT PROCEED.",
+        "Contention_Applied": false,
+        "Contention_Detail": "",
+        "Rules_Cited": "A-040",
+        "Bull_Override_Checked": true,
+        "Bull_Override_Result": "Inapplicable. Crypto regime is MACRO_HEADWIND (not BULL) and algo gate is CLOSED. Both conditions required for Bull Override (A-040 Rule 4) are absent. Override was evaluated and found inapplicable — not skipped.",
+        "Capital_Sufficient": true,
+        "Portfolio_Heat_Pct": 0,
+        "Monitoring_Items": "GDXJ sub-committee returned UNKNOWN verdict with 0/5 conviction and N/A consensus. All three gate legs (GLD, TIP, VIX) passed. Root cause of UNKNOWN verdict must be investigated by silo administrator before next session — gate passage without a verdict suggests a procedural or data gap in the sub-committee process.; IPO sub-committee returned DO NOT PROCEED with conviction 5/5 but consensus only 67%. The required consensus threshold is understood to be above 67% (majority supermajority). The failure condition is consensus threshold only — conviction is not the limiting factor. Silo administrator should confirm the exact consensus threshold in writing for audit clarity.; Crypto regime is MACRO_HEADWIND with 0% allocation. No BTC vs 200DMA or 90-day return data was supplied. Silo administrator should confirm whether data unavailability is expected under MACRO_HEADWIND or represents a reporting gap.; PRIORITY HIERARCHY revalidation trigger (A-040): The 25 filtered trades threshold per silo that would trigger hierarchy revalidation cannot currently be tracked because silo administrators have not reported running trade totals. This is a governance gap. Silo administrators for all three silos must begin reporting cumulative filtered trade counts in each session report. Escalated from monitoring item to formal governance gap.; Kill Switch framework: All four Kill Switch metrics (loss %, win rate %, max gain %, trades completed) are at zero or baseline given no trades have been executed this session and no open positions exist. No Kill Switch proximity threat is present. Silo administrators should include Kill Switch metric snapshots in future sub-committee reports to enable Chair-level confirmation each session.; Cooldown tier is NORMAL (100% of Fixed Bet). No additional sizing restrictions apply beyond the standard 90% deployment cap. Confirmed non-restrictive for this session.; Capital Gate is fully open at 100%. No capital gate restriction applies this session.; Open positions: Zero open positions confirmed explicitly. No hold expiry monitoring required this session.",
+        "Updated_At": "2026-04-15T20:47:00Z",
+        "Session_Health": "DEGRADED",
+        "LLM_Failures": "Gemini:PRM-006B Gemini failed after 3 attempts. Last: Gemini HTTP 503 (attem",
+        "Deputy_Challenge": "CHALLENGE",
+        "Deputy_Severity": "MEDIUM"
       }
     ],
     "Config": [
@@ -251,7 +310,7 @@
       },
       {
         "Key": "FIXED_BET_GBP",
-        "Value": 1000,
+        "Value": 30,
         "Notes": ""
       },
       {
@@ -1128,6 +1187,46 @@
         "Reference_ID": "CRYPTO",
         "Description": "CLOSED",
         "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-04-13T13:25:31Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-13T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-14T13:25:33Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-14T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-15T13:42:31Z",
+        "Action_Type": "REGIME_SYNTHESIS",
+        "Source": "MACRO_HEADWIND",
+        "Reference_ID": "LOW | DIVERGING | Avg conviction: 1/5",
+        "Description": "3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.",
+        "Outcome": "Apps Script: runRegimeSynthesis()"
+      },
+      {
+        "Timestamp": "2026-04-15T13:42:40Z",
+        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "CLOSED",
+        "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-04-16T13:25:29Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-16T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
       }
     ]
   }
