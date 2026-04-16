@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-16T13:38:08Z",
+  "generated_at_utc": "2026-04-16T13:40:44Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -11,7 +11,7 @@
         "platform": "KRAKEN",
         "instrument": "NEARUSD",
         "direction": "LONG",
-        "size": 0.1,
+        "size": 1,
         "entry_price": "",
         "stop_price": "",
         "ic_session_id": "TEST_IC",
