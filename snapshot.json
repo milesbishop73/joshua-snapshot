@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-16T14:16:56Z",
+  "generated_at_utc": "2026-04-19T05:45:31Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -46,7 +46,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -11
+        "DEPLOY": -13
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -160,6 +160,39 @@
         "LLM_Failures": "Gemini:PRM-006B Gemini failed after 3 attempts. Last: Gemini HTTP 503 (attem",
         "Deputy_Challenge": "CHALLENGE",
         "Deputy_Severity": "MEDIUM"
+      },
+      {
+        "Session_ID": "20260419_IC",
+        "Session_Date": "2026-04-19T07:00:00Z",
+        "Regime_Consensus": "Crypto: SIDEWAYS/SIDEWAYS/SIDEWAYS | IPO: CAUTIOUS | GDXJ: BROKEN",
+        "Crypto_Gate": "CLOSED",
+        "Crypto_Verdict": "BLOCKED",
+        "Crypto_Candidate": "",
+        "Crypto_Lead": "N/A",
+        "Crypto_Bear": "N/A",
+        "Crypto_Independent": "N/A",
+        "Crypto_SubChair": "N/A",
+        "IPO_Verdict": "BLOCKED",
+        "IPO_Candidate": "",
+        "GDXJ_Verdict": "BLOCKED",
+        "Reserved": "",
+        "Timestamp": "2026-04-19T12:45:00Z",
+        "Chair_Verdict": "DO NOT PROCEED",
+        "Chair_Executive_Summary": "All three trading silos are blocked from deploying capital this session — Crypto Mid-Cap is range-bound with its algorithmic gate closed, IPO Lock-Up Shorts has no eligible candidates, and Junior Mining is in a broken regime. There is nothing to trade and no contention to resolve. The full £48 portfolio remains in cash with no open positions. For reconsideration: Crypto requires Bitcoin to recover above its 200-day moving average and the algorithmic gate to open; IPO requires new candidates to appear in the candidates list; Junior Mining requires its regime gate legs to recover from broken status.",
+        "Chair_Governance_Record": "Session 20260419_IC. Date: 2026-04-19. All three sub-committees returned GATE BLOCKED verdicts; the Main Committee verdict is therefore DO NOT PROCEED per verdict rules.\n\n(1) SILO GATE STATUS AND REGIME:\n— Crypto Mid-Cap Spot: Regime RANGE_BOUND (55% allocation). Algo gate CLOSED. BTC below 200DMA; 90-day return N/A. Gate blocked on both regime and algo gate conditions. Conviction 0/5.\n— IPO Lock-Up Shorts: Gate blocked — no eligible IPO candidates present in IPO_Candidates tab. No lock-up expiry window active. Conviction 0/5.\n— Junior Mining GDXJ: Gate blocked — regime BROKEN. All three gate legs (GLD, TIP, VIX) returned N/A, indicating regime conditions are not met. Conviction 0/5.\n\n(2) SUB-COMMITTEE VERDICTS: All three silos are GATE BLOCKED. No sub-committee returned PROCEED or CONDITIONAL. No analyst conviction recorded across any silo.\n\n(3) CONTENTION ANALYSIS: Not applicable. No silo reached the deployment stage. A-040 contention rules are not triggered. Bull Override (A-040 Rule 4) was not checked as Crypto regime is RANGE_BOUND, not BULL, and the algo gate is CLOSED — dual confirmation criteria cannot be met.\n\n(4) CAPITAL SUFFICIENCY AND EXCHANGE CAPS: Total capital £48. Deployed £0. Available £48. Deployment cap (90%) = £43. No positions open. Exchange exposure cap (70% = £33.60 on any single exchange) is not at risk. 30% permanent off-exchange reserve (Revolut, £14.40) is intact. Capital Gate is at 100% — no drawdown has occurred, no sizing reduction applies.\n\n(5) PORTFOLIO HEAT: 0%. No open positions. Maximum 3 simultaneous positions constraint is not approached.\n\n(6) COOLDOWN TIER: NORMAL. Fixed Bet sizing applies at 100% — no reduction.\n\n(7) KILL SWITCH PROXIMITY: All kill switch metrics are at 0% (zero trades completed across all silos). Kill Switch is not proximate. This is confirmed as a standing governance checkpoint.\n\n(8) A-040 PROVISIONAL HIERARCHY: Hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) remains provisional. No silo has completed any filtered trades. The Deputy Chair correctly identified that no defined review trigger exists for the case where the 25-trade threshold is never reached. Recommended governance action: formalise an annual calendar review trigger AND an early-warning flag at 20 filtered trades per silo, to prevent the provisional hierarchy from persisting indefinitely without scrutiny. This is flagged as a standing monitoring item pending formalisation.",
+        "Contention_Applied": false,
+        "Contention_Detail": "",
+        "Rules_Cited": "A-040",
+        "Bull_Override_Checked": false,
+        "Bull_Override_Result": "",
+        "Capital_Sufficient": true,
+        "Portfolio_Heat_Pct": 0,
+        "Monitoring_Items": "Crypto Mid-Cap: Monitor BTC vs 200DMA for regime upgrade to BULL or NEUTRAL; algo gate currently CLOSED.; IPO Lock-Up Shorts: Monitor IPO_Candidates tab for eligible candidates entering lock-up expiry window.; Junior Mining GDXJ: Monitor GLD, TIP, VIX gate legs for regime recovery from BROKEN status.; A-040 Provisional Hierarchy: Priority hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) remains provisional. No silo has approached 25 filtered trades. If any silo approaches 25 filtered trades, revalidation of hierarchy is required. Governance note: if 25-trade threshold remains unmet indefinitely, the provisional hierarchy persists without automatic expiry. A defined review trigger — recommended: annual calendar review or upon first silo reaching 20 filtered trades as an early-warning flag — should be formalised to prevent silent indefinite provisional status.; Kill Switch proximity: All metrics at 0% (0 trades completed across all silos). Kill Switch is not proximate. Confirm at each session until first trades are recorded.; Capital Gate: Currently 100% (no drawdown). No sizing reduction applies. Confirm at each session.; Cooldown Tier: NORMAL (100% of Fixed Bet). No position sizing reduction applies this session.",
+        "Updated_At": "2026-04-19T12:45:00Z",
+        "Session_Health": "CLEAN",
+        "LLM_Failures": "",
+        "Deputy_Challenge": "CHALLENGE",
+        "Deputy_Severity": "LOW"
       }
     ],
     "Config": [
@@ -460,182 +493,6 @@
       }
     ],
     "Action Log": [
-      {
-        "Timestamp": "2026-03-18T17:03:48Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "INCOMPLETE",
-        "Reference_ID": "LOW | UNKNOWN | Avg conf: 0%",
-        "Description": "One or more timeframes missing regime data. Cannot synthesise.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-18T17:06:43Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-18T17:17:23Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-18T17:19:58Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T10:31:58Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "0 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T10:38:09Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "0 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T10:50:09Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "16 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T10:53:30Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T10:55:00Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T10:55:07Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T10:58:44Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T10:58:52Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T11:20:42Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T11:20:50Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T11:23:43Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T11:23:51Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T11:44:46Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T11:44:55Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T11:49:56Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T11:50:05Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-03-19T11:58:25Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "COUNTER_TREND_RALLY",
-        "Reference_ID": "LOW | CONFLICTED | Avg conf: 74%",
-        "Description": "1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-19T11:58:34Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
       {
         "Timestamp": "2026-03-22T08:32:34Z",
         "Action_Type": "REGIME_SYNTHESIS",
@@ -1227,6 +1084,46 @@
         "Reference_ID": "0 alert(s), 0 action(s)",
         "Description": "ALL CLEAR",
         "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-17T13:25:29Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-17T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-18T13:25:33Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-18T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-19T05:43:18Z",
+        "Action_Type": "REGIME_ORCHESTRATOR",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "2W:SIDEWAYS, 1M:SIDEWAYS, 3M:SIDEWAYS",
+        "Outcome": "3 timeframes assessed in 80s"
+      },
+      {
+        "Timestamp": "2026-04-19T05:44:12Z",
+        "Action_Type": "REGIME_SYNTHESIS",
+        "Source": "RANGE_BOUND",
+        "Reference_ID": "MEDIUM | ALIGNED | Avg conviction: 2.3/5",
+        "Description": "All timeframes in sideways regime. Market lacks directional conviction.",
+        "Outcome": "Apps Script: runRegimeSynthesis()"
+      },
+      {
+        "Timestamp": "2026-04-19T05:44:21Z",
+        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "CLOSED",
+        "Outcome": "15 candidates fetched"
       }
     ]
   }
