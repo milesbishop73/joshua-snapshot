@@ -16,7 +16,7 @@ th { background: #f5f5f5; }
 <body>
 <h1>JOSHUA Run Snapshot</h1>
 <div class="meta">
-<p>Generated: 2026-04-16T14:16:56Z</p>
+<p>Generated: 2026-04-19T05:45:31Z</p>
 <p>Source: JOSHUA_Command_Centre</p>
 <p>Tabs: Trade Book, IC_Briefings, Tab 9A - Regime History, IC Sessions, Config, Capital Ledger, Cooldown Tracker, Kill Switches, Action Log</p>
 </div>
@@ -33,12 +33,12 @@ th { background: #f5f5f5; }
 <tr><td>Capital_Allocated_%</td><td>0.63</td></tr>
 <tr><td>Gate_Confidence</td><td>0.75</td></tr>
 <tr><td>Gate_Valid_Until</td><td>2026-05-03T23:00:00Z</td></tr>
-<tr><td>Days_Until_Review</td><td>-11</td></tr>
+<tr><td>Days_Until_Review</td><td>-13</td></tr>
 <tr><td>Overall_Score</td><td>7</td></tr>
 <tr><td>Date</td><td>2W_Regime</td></tr>
 <tr><td>2026-02-23T08:00:00Z</td><td>Choppy Bull</td></tr>
 </table>
-<h2>IC Sessions (3 rows)</h2>
+<h2>IC Sessions (4 rows)</h2>
 <table>
 <tr><th>Session_ID</th><th>Session_Date</th><th>Regime_Consensus</th><th>Crypto_Gate</th><th>Crypto_Verdict</th><th>Crypto_Candidate</th><th>Crypto_Lead</th><th>Crypto_Bear</th><th>Crypto_Independent</th><th>Crypto_SubChair</th><th>IPO_Verdict</th><th>IPO_Candidate</th><th>GDXJ_Verdict</th><th>Reserved</th><th>Timestamp</th><th>Chair_Verdict</th><th>Chair_Executive_Summary</th><th>Chair_Governance_Record</th><th>Contention_Applied</th><th>Contention_Detail</th><th>Rules_Cited</th><th>Bull_Override_Checked</th><th>Bull_Override_Result</th><th>Capital_Sufficient</th><th>Portfolio_Heat_Pct</th><th>Monitoring_Items</th><th>Updated_At</th><th>Session_Health</th><th>LLM_Failures</th><th>Deputy_Challenge</th><th>Deputy_Severity</th></tr>
 <tr><td>20260406_IC</td><td>2026-04-06T07:00:00Z</td><td>Crypto: BEAR/UNCERTAIN/UNCERTAIN | IPO: CAUTIOUS | GDXJ: BROKEN</td><td>CLOSED</td><td>BLOCKED</td><td></td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>DO NOT PROCEED</td><td>APXT (lock-up: 2026-04-25)</td><td>BLOCKED</td><td></td><td>2026-04-07T05:02:00Z</td><td>DO NOT PROCEED</td><td>No trades are being deployed today. All three silos are blocked: the crypto silo is in a transitional market regime with its algorithmic gate closed, the junior mining silo is in a broken regime with no valid gate readings, and the IPO shorts sub-committee issued a formal Do Not Proceed on candidate APXT despite high analyst conviction — the committee chair cannot override that verdict. For reconsideration, the IPO silo needs to achieve the required analyst consensus threshold, the crypto silo needs Bitcoin to establish a clear trend above or below its 200-day moving average, and the mining silo needs its gold, inflation, and volatility gate legs to return valid readings. Full capital of £48 remains available and undeployed.</td><td>Session 20260406_IC — Main Committee Chair Review.
@@ -108,6 +108,26 @@ The A-040 provisional priority hierarchy revalidation trigger (25 filtered trade
 
 (8) VERDICT:
 All three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN). Verdict is DO NOT PROCEED.</td><td>false</td><td></td><td>A-040</td><td>true</td><td>Inapplicable. Crypto regime is MACRO_HEADWIND (not BULL) and algo gate is CLOSED. Both conditions required for Bull Override (A-040 Rule 4) are absent. Override was evaluated and found inapplicable — not skipped.</td><td>true</td><td>0</td><td>GDXJ sub-committee returned UNKNOWN verdict with 0/5 conviction and N/A consensus. All three gate legs (GLD, TIP, VIX) passed. Root cause of UNKNOWN verdict must be investigated by silo administrator before next session — gate passage without a verdict suggests a procedural or data gap in the sub-committee process.; IPO sub-committee returned DO NOT PROCEED with conviction 5/5 but consensus only 67%. The required consensus threshold is understood to be above 67% (majority supermajority). The failure condition is consensus threshold only — conviction is not the limiting factor. Silo administrator should confirm the exact consensus threshold in writing for audit clarity.; Crypto regime is MACRO_HEADWIND with 0% allocation. No BTC vs 200DMA or 90-day return data was supplied. Silo administrator should confirm whether data unavailability is expected under MACRO_HEADWIND or represents a reporting gap.; PRIORITY HIERARCHY revalidation trigger (A-040): The 25 filtered trades threshold per silo that would trigger hierarchy revalidation cannot currently be tracked because silo administrators have not reported running trade totals. This is a governance gap. Silo administrators for all three silos must begin reporting cumulative filtered trade counts in each session report. Escalated from monitoring item to formal governance gap.; Kill Switch framework: All four Kill Switch metrics (loss %, win rate %, max gain %, trades completed) are at zero or baseline given no trades have been executed this session and no open positions exist. No Kill Switch proximity threat is present. Silo administrators should include Kill Switch metric snapshots in future sub-committee reports to enable Chair-level confirmation each session.; Cooldown tier is NORMAL (100% of Fixed Bet). No additional sizing restrictions apply beyond the standard 90% deployment cap. Confirmed non-restrictive for this session.; Capital Gate is fully open at 100%. No capital gate restriction applies this session.; Open positions: Zero open positions confirmed explicitly. No hold expiry monitoring required this session.</td><td>2026-04-15T20:47:00Z</td><td>DEGRADED</td><td>Gemini:PRM-006B Gemini failed after 3 attempts. Last: Gemini HTTP 503 (attem</td><td>CHALLENGE</td><td>MEDIUM</td></tr>
+<tr><td>20260419_IC</td><td>2026-04-19T07:00:00Z</td><td>Crypto: SIDEWAYS/SIDEWAYS/SIDEWAYS | IPO: CAUTIOUS | GDXJ: BROKEN</td><td>CLOSED</td><td>BLOCKED</td><td></td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>BLOCKED</td><td></td><td>BLOCKED</td><td></td><td>2026-04-19T12:45:00Z</td><td>DO NOT PROCEED</td><td>All three trading silos are blocked from deploying capital this session — Crypto Mid-Cap is range-bound with its algorithmic gate closed, IPO Lock-Up Shorts has no eligible candidates, and Junior Mining is in a broken regime. There is nothing to trade and no contention to resolve. The full £48 portfolio remains in cash with no open positions. For reconsideration: Crypto requires Bitcoin to recover above its 200-day moving average and the algorithmic gate to open; IPO requires new candidates to appear in the candidates list; Junior Mining requires its regime gate legs to recover from broken status.</td><td>Session 20260419_IC. Date: 2026-04-19. All three sub-committees returned GATE BLOCKED verdicts; the Main Committee verdict is therefore DO NOT PROCEED per verdict rules.
+
+(1) SILO GATE STATUS AND REGIME:
+— Crypto Mid-Cap Spot: Regime RANGE_BOUND (55% allocation). Algo gate CLOSED. BTC below 200DMA; 90-day return N/A. Gate blocked on both regime and algo gate conditions. Conviction 0/5.
+— IPO Lock-Up Shorts: Gate blocked — no eligible IPO candidates present in IPO_Candidates tab. No lock-up expiry window active. Conviction 0/5.
+— Junior Mining GDXJ: Gate blocked — regime BROKEN. All three gate legs (GLD, TIP, VIX) returned N/A, indicating regime conditions are not met. Conviction 0/5.
+
+(2) SUB-COMMITTEE VERDICTS: All three silos are GATE BLOCKED. No sub-committee returned PROCEED or CONDITIONAL. No analyst conviction recorded across any silo.
+
+(3) CONTENTION ANALYSIS: Not applicable. No silo reached the deployment stage. A-040 contention rules are not triggered. Bull Override (A-040 Rule 4) was not checked as Crypto regime is RANGE_BOUND, not BULL, and the algo gate is CLOSED — dual confirmation criteria cannot be met.
+
+(4) CAPITAL SUFFICIENCY AND EXCHANGE CAPS: Total capital £48. Deployed £0. Available £48. Deployment cap (90%) = £43. No positions open. Exchange exposure cap (70% = £33.60 on any single exchange) is not at risk. 30% permanent off-exchange reserve (Revolut, £14.40) is intact. Capital Gate is at 100% — no drawdown has occurred, no sizing reduction applies.
+
+(5) PORTFOLIO HEAT: 0%. No open positions. Maximum 3 simultaneous positions constraint is not approached.
+
+(6) COOLDOWN TIER: NORMAL. Fixed Bet sizing applies at 100% — no reduction.
+
+(7) KILL SWITCH PROXIMITY: All kill switch metrics are at 0% (zero trades completed across all silos). Kill Switch is not proximate. This is confirmed as a standing governance checkpoint.
+
+(8) A-040 PROVISIONAL HIERARCHY: Hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) remains provisional. No silo has completed any filtered trades. The Deputy Chair correctly identified that no defined review trigger exists for the case where the 25-trade threshold is never reached. Recommended governance action: formalise an annual calendar review trigger AND an early-warning flag at 20 filtered trades per silo, to prevent the provisional hierarchy from persisting indefinitely without scrutiny. This is flagged as a standing monitoring item pending formalisation.</td><td>false</td><td></td><td>A-040</td><td>false</td><td></td><td>true</td><td>0</td><td>Crypto Mid-Cap: Monitor BTC vs 200DMA for regime upgrade to BULL or NEUTRAL; algo gate currently CLOSED.; IPO Lock-Up Shorts: Monitor IPO_Candidates tab for eligible candidates entering lock-up expiry window.; Junior Mining GDXJ: Monitor GLD, TIP, VIX gate legs for regime recovery from BROKEN status.; A-040 Provisional Hierarchy: Priority hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) remains provisional. No silo has approached 25 filtered trades. If any silo approaches 25 filtered trades, revalidation of hierarchy is required. Governance note: if 25-trade threshold remains unmet indefinitely, the provisional hierarchy persists without automatic expiry. A defined review trigger — recommended: annual calendar review or upon first silo reaching 20 filtered trades as an early-warning flag — should be formalised to prevent silent indefinite provisional status.; Kill Switch proximity: All metrics at 0% (0 trades completed across all silos). Kill Switch is not proximate. Confirm at each session until first trades are recorded.; Capital Gate: Currently 100% (no drawdown). No sizing reduction applies. Confirm at each session.; Cooldown Tier: NORMAL (100% of Fixed Bet). No position sizing reduction applies this session.</td><td>2026-04-19T12:45:00Z</td><td>CLEAN</td><td></td><td>CHALLENGE</td><td>LOW</td></tr>
 </table>
 <h2>Config (45 rows)</h2>
 <table>
@@ -172,31 +192,9 @@ All three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN).
 <tr><td>KS-005</td><td>Sharpe Floor</td><td>Below 0.5 over rolling 20 trades</td><td></td><td>GREEN</td><td></td><td></td><td>Review required. Halt if below 0.3.</td><td></td></tr>
 <tr><td>KS-006</td><td>No &gt;100% Winner in 36 trades</td><td>36 consecutive trades without a &gt;100% return</td><td></td><td>GREEN</td><td></td><td></td><td>Full system review. Consider retirement.</td><td></td></tr>
 </table>
-<h2>Action Log (96 rows)</h2>
+<h2>Action Log (79 rows)</h2>
 <table>
 <tr><th>Timestamp</th><th>Action_Type</th><th>Source</th><th>Reference_ID</th><th>Description</th><th>Outcome</th></tr>
-<tr><td>2026-03-18T17:03:48Z</td><td>REGIME_SYNTHESIS</td><td>INCOMPLETE</td><td>LOW | UNKNOWN | Avg conf: 0%</td><td>One or more timeframes missing regime data. Cannot synthesise.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-18T17:06:43Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-18T17:17:23Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-18T17:19:58Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T10:31:58Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>0 candidates fetched</td></tr>
-<tr><td>2026-03-19T10:38:09Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>0 candidates fetched</td></tr>
-<tr><td>2026-03-19T10:50:09Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>16 candidates fetched</td></tr>
-<tr><td>2026-03-19T10:53:30Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T10:55:00Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T10:55:07Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T10:58:44Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T10:58:52Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T11:20:42Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T11:20:50Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T11:23:43Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T11:23:51Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T11:44:46Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T11:44:55Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T11:49:56Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T11:50:05Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-03-19T11:58:25Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 74%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-19T11:58:34Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
 <tr><td>2026-03-22T08:32:34Z</td><td>REGIME_SYNTHESIS</td><td>MACRO_HEADWIND</td><td>LOW | DIVERGING | Avg conf: 79%</td><td>3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-03-22T08:32:46Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
 <tr><td>2026-03-22T18:27:08Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 76%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
@@ -271,6 +269,11 @@ All three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN).
 <tr><td>2026-04-15T13:42:31Z</td><td>REGIME_SYNTHESIS</td><td>MACRO_HEADWIND</td><td>LOW | DIVERGING | Avg conviction: 1/5</td><td>3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-04-15T13:42:40Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
 <tr><td>2026-04-16T13:25:29Z</td><td>DAILY_SENTINEL</td><td>2026-04-16T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-04-17T13:25:29Z</td><td>DAILY_SENTINEL</td><td>2026-04-17T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-04-18T13:25:33Z</td><td>DAILY_SENTINEL</td><td>2026-04-18T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-04-19T05:43:18Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:SIDEWAYS, 1M:SIDEWAYS, 3M:SIDEWAYS</td><td>3 timeframes assessed in 80s</td></tr>
+<tr><td>2026-04-19T05:44:12Z</td><td>REGIME_SYNTHESIS</td><td>RANGE_BOUND</td><td>MEDIUM | ALIGNED | Avg conviction: 2.3/5</td><td>All timeframes in sideways regime. Market lacks directional conviction.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
+<tr><td>2026-04-19T05:44:21Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
 </table>
 </body>
 </html>
