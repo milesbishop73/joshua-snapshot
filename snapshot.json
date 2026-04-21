@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-19T05:45:31Z",
+  "generated_at_utc": "2026-04-21T11:13:18Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -9,24 +9,24 @@
         "action_type": "ENTRY",
         "silo": "CRYPTO",
         "platform": "KRAKEN",
-        "instrument": "XRPUSD",
+        "instrument": "XRPGBP",
         "direction": "LONG",
         "size": 10,
-        "entry_price": "",
-        "stop_price": "",
+        "entry_price": 1.06596,
+        "stop_price": 0.692874,
         "ic_session_id": "TEST_IC",
         "ic_session_date": "2026-04-15T07:00:00Z",
         "trigger_type": "IMMEDIATE",
         "trigger_expiry": "",
         "exit_trigger": "",
         "exit_rationale": "",
-        "status": "FAILED",
+        "status": "OPEN",
         "exit_price": "",
         "pnl": "",
         "pnl_pct": "",
         "hold_days": "",
         "notes": "",
-        "notional_gbp": 15,
+        "notional_gbp": 10,
         "paper_trade": false
       }
     ],
@@ -46,7 +46,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -13
+        "DEPLOY": -16
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -493,22 +493,6 @@
       }
     ],
     "Action Log": [
-      {
-        "Timestamp": "2026-03-22T08:32:34Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "MACRO_HEADWIND",
-        "Reference_ID": "LOW | DIVERGING | Avg conf: 79%",
-        "Description": "3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-03-22T08:32:46Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "15 candidates fetched"
-      },
       {
         "Timestamp": "2026-03-22T18:27:08Z",
         "Action_Type": "REGIME_SYNTHESIS",
@@ -1124,6 +1108,22 @@
         "Reference_ID": "CRYPTO",
         "Description": "CLOSED",
         "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-04-20T13:25:33Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-20T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (5d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-21T13:25:32Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-21T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
       }
     ]
   }
