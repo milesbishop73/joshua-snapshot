@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-21T11:13:18Z",
+  "generated_at_utc": "2026-04-21T11:31:03Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -18,14 +18,14 @@
         "ic_session_date": "2026-04-15T07:00:00Z",
         "trigger_type": "IMMEDIATE",
         "trigger_expiry": "",
-        "exit_trigger": "",
-        "exit_rationale": "",
-        "status": "OPEN",
+        "exit_trigger": "hold_expiry",
+        "exit_rationale": "Hold expiry: XRPGBP (CRYPTO) D1/1. Entry 2026-04-20T11:13:09.536Z.",
+        "status": "EXIT_FAILED",
         "exit_price": "",
         "pnl": "",
         "pnl_pct": "",
         "hold_days": "",
-        "notes": "",
+        "notes": "EXIT_FAILED: Miles: CLOSE_ERROR",
         "notional_gbp": 10,
         "paper_trade": false
       }
@@ -213,7 +213,7 @@
       },
       {
         "Key": "CRYPTO_HOLD_DAYS",
-        "Value": 20,
+        "Value": 1,
         "Notes": ""
       },
       {
@@ -1123,6 +1123,30 @@
         "Source": "2026-04-21T07:00:00Z",
         "Reference_ID": "1 alert(s), 0 action(s)",
         "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-21T18:17:58Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-21T07:00:00Z",
+        "Reference_ID": "1 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-21T18:26:44Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-21T07:00:00Z",
+        "Reference_ID": "2 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN. | [MEDIUM] HOLD_EXPIRY_WARNING: XRPGBP (CRYPTO) hold D0/1. Expires in 1 day(s).",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-04-21T18:28:37Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-04-21T07:00:00Z",
+        "Reference_ID": "2 alert(s), 0 action(s)",
+        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN. | [MEDIUM] HOLD_EXPIRY_WARNING: XRPGBP (CRYPTO) hold D0/1. Expires in 1 day(s).",
         "Outcome": ""
       }
     ]
