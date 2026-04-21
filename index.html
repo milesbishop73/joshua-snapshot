@@ -16,14 +16,14 @@ th { background: #f5f5f5; }
 <body>
 <h1>JOSHUA Run Snapshot</h1>
 <div class="meta">
-<p>Generated: 2026-04-19T05:45:31Z</p>
+<p>Generated: 2026-04-21T11:13:18Z</p>
 <p>Source: JOSHUA_Command_Centre</p>
 <p>Tabs: Trade Book, IC_Briefings, Tab 9A - Regime History, IC Sessions, Config, Capital Ledger, Cooldown Tracker, Kill Switches, Action Log</p>
 </div>
 <h2>Trade Book (1 rows)</h2>
 <table>
 <tr><th>trade_id</th><th>action_type</th><th>silo</th><th>platform</th><th>instrument</th><th>direction</th><th>size</th><th>entry_price</th><th>stop_price</th><th>ic_session_id</th><th>ic_session_date</th><th>trigger_type</th><th>trigger_expiry</th><th>exit_trigger</th><th>exit_rationale</th><th>status</th><th>exit_price</th><th>pnl</th><th>pnl_pct</th><th>hold_days</th><th>notes</th><th>notional_gbp</th><th>paper_trade</th></tr>
-<tr><td>TEST_20260415_001</td><td>ENTRY</td><td>CRYPTO</td><td>KRAKEN</td><td>XRPUSD</td><td>LONG</td><td>10</td><td></td><td></td><td>TEST_IC</td><td>2026-04-15T07:00:00Z</td><td>IMMEDIATE</td><td></td><td></td><td></td><td>FAILED</td><td></td><td></td><td></td><td></td><td></td><td>15</td><td>false</td></tr>
+<tr><td>TEST_20260415_001</td><td>ENTRY</td><td>CRYPTO</td><td>KRAKEN</td><td>XRPGBP</td><td>LONG</td><td>10</td><td>1.06596</td><td>0.692874</td><td>TEST_IC</td><td>2026-04-15T07:00:00Z</td><td>IMMEDIATE</td><td></td><td></td><td></td><td>OPEN</td><td></td><td></td><td></td><td></td><td></td><td>10</td><td>false</td></tr>
 </table>
 <h2>IC_Briefings (0 rows)</h2>
 <p>No data</p>
@@ -33,7 +33,7 @@ th { background: #f5f5f5; }
 <tr><td>Capital_Allocated_%</td><td>0.63</td></tr>
 <tr><td>Gate_Confidence</td><td>0.75</td></tr>
 <tr><td>Gate_Valid_Until</td><td>2026-05-03T23:00:00Z</td></tr>
-<tr><td>Days_Until_Review</td><td>-13</td></tr>
+<tr><td>Days_Until_Review</td><td>-16</td></tr>
 <tr><td>Overall_Score</td><td>7</td></tr>
 <tr><td>Date</td><td>2W_Regime</td></tr>
 <tr><td>2026-02-23T08:00:00Z</td><td>Choppy Bull</td></tr>
@@ -195,8 +195,6 @@ All three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN).
 <h2>Action Log (79 rows)</h2>
 <table>
 <tr><th>Timestamp</th><th>Action_Type</th><th>Source</th><th>Reference_ID</th><th>Description</th><th>Outcome</th></tr>
-<tr><td>2026-03-22T08:32:34Z</td><td>REGIME_SYNTHESIS</td><td>MACRO_HEADWIND</td><td>LOW | DIVERGING | Avg conf: 79%</td><td>3M bearish provides structural headwind regardless of shorter-term signals. Mixed conditions below the macro level.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-03-22T08:32:46Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
 <tr><td>2026-03-22T18:27:08Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 76%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-03-22T18:27:24Z</td><td>REGIME_SYNTHESIS</td><td>COUNTER_TREND_RALLY</td><td>LOW | CONFLICTED | Avg conf: 76%</td><td>1M bullish signal inside a 3M bearish macro trend. This is a rally within a downtrend — historically the most dangerous setup for longs.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-03-22T18:27:38Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
@@ -274,6 +272,8 @@ All three silos returned non-PROCEED verdicts (two DO NOT PROCEED, one UNKNOWN).
 <tr><td>2026-04-19T05:43:18Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:SIDEWAYS, 1M:SIDEWAYS, 3M:SIDEWAYS</td><td>3 timeframes assessed in 80s</td></tr>
 <tr><td>2026-04-19T05:44:12Z</td><td>REGIME_SYNTHESIS</td><td>RANGE_BOUND</td><td>MEDIUM | ALIGNED | Avg conviction: 2.3/5</td><td>All timeframes in sideways regime. Market lacks directional conviction.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-04-19T05:44:21Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>CLOSED</td><td>15 candidates fetched</td></tr>
+<tr><td>2026-04-20T13:25:33Z</td><td>DAILY_SENTINEL</td><td>2026-04-20T07:00:00Z</td><td>1 alert(s), 0 action(s)</td><td>[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (5d). ENTRY WINDOW OPEN.</td><td></td></tr>
+<tr><td>2026-04-21T13:25:32Z</td><td>DAILY_SENTINEL</td><td>2026-04-21T07:00:00Z</td><td>1 alert(s), 0 action(s)</td><td>[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.</td><td></td></tr>
 </table>
 </body>
 </html>
