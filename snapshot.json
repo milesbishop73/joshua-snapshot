@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-17T05:45:55Z",
+  "generated_at_utc": "2026-05-24T05:45:36Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -46,7 +46,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -41
+        "DEPLOY": -48
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -325,6 +325,39 @@
         "LLM_Failures": "",
         "Deputy_Challenge": "CHALLENGE",
         "Deputy_Severity": "LOW"
+      },
+      {
+        "Session_ID": "20260524_IC",
+        "Session_Date": "2026-05-24T07:00:00Z",
+        "Regime_Consensus": "Crypto: SIDEWAYS/SIDEWAYS/SIDEWAYS | IPO: ACTIVE | GDXJ: BROKEN",
+        "Crypto_Gate": "CLOSED",
+        "Crypto_Verdict": "BLOCKED",
+        "Crypto_Candidate": "",
+        "Crypto_Lead": "N/A",
+        "Crypto_Bear": "N/A",
+        "Crypto_Independent": "N/A",
+        "Crypto_SubChair": "N/A",
+        "IPO_Verdict": "BLOCKED",
+        "IPO_Candidate": "",
+        "GDXJ_Verdict": "BLOCKED",
+        "Reserved": "",
+        "Timestamp": "2026-05-24T12:45:00Z",
+        "Chair_Verdict": "DO NOT PROCEED",
+        "Chair_Executive_Summary": "All three trading silos — Crypto Mid-Cap, IPO Lock-Up Shorts, and Junior Mining — are gate-blocked this session, so no trades are being deployed today. The most notable concern is that data feeds appear to have failed simultaneously across all silos, with key market indicators returning no data rather than live readings. No capital is at risk and all portfolio constraints are comfortably met. For trading to resume, data feeds must be restored and at least one silo must pass its regime and gate conditions in a future session — there is no obligation to revisit today's missed opportunity.",
+        "Chair_Governance_Record": "SESSION 20260524_IC — MAIN COMMITTEE CHAIR FINAL BRIEFING (POST DEPUTY CHALLENGE)\n\n1. SILO GATE STATUS AND REGIME\nAll three silos returned GATE BLOCKED this session. Crypto Mid-Cap Spot: regime RANGE_BOUND, algo gate CLOSED, BTC vs 200DMA returning N/A. Gate blocked on both regime and BTC/200DMA conditions. IPO Lock-Up Shorts: gate blocked — no eligible candidates present in IPO_Candidates tab. Junior Mining GDXJ: gate blocked — regime BROKEN, all three gate legs (GLD, TIP, VIX) returning N/A. No sub-committee reached conviction scoring.\n\n2. SUB-COMMITTEE VERDICTS\nAll three sub-committees: GATE BLOCKED. Conviction 0/5 across all silos. No candidates evaluated. Verdict: DO NOT PROCEED per standing rule that all gate-blocked silos produce a DO NOT PROCEED outcome.\n\n3. CONTENTION ANALYSIS (A-040)\nNo contention analysis required — no silo reached PROCEED. A-040 priority hierarchy (IPO Shorts → GDXJ → Crypto Mid-Cap) not triggered. Crypto coexistence rule not triggered. Bull Override (A-040 Rule 4) checked and dismissed: Crypto regime is RANGE_BOUND and algo gate is CLOSED; dual confirmation (BULL regime + OPEN gate) cannot be satisfied.\n\n4. CAPITAL SUFFICIENCY AND EXCHANGE CAPS\nTotal capital £68, deployed £0, available £68. Deployment cap (90%) = £61. Capital Gate: 100% — no restriction. Cooldown tier: NORMAL (100% of Fixed Bet) — no sizing reduction applies. No positions open; 70% single-exchange cap and 30% permanent off-exchange reserve (Revolut) are not under pressure. Portfolio heat: 0%.\n\n5. KILL SWITCH AND GOVERNANCE COUNTERS\n1 trade completed to date against 24-trade warning threshold and 36-trade hard stop threshold. No loss %, win rate %, or max gain % kill switch metrics are in breach. These counters must be logged each session as standing governance items regardless of session activity.\n\n6. SYSTEMIC DATA FEED RISK\nSimultaneous N/A readings across BTC 200DMA, GLD, TIP, and VIX in a single session — spanning three unrelated silos — constitutes a potential systemic data feed failure. This is flagged as a monitoring item. Standing protocol: no look-back obligation exists; a missed session due to feed failure is forfeited and does not create retroactive PROCEED eligibility. Governance team should formally codify this protocol to eliminate future ambiguity.\n\n7. PRIORITY HIERARCHY REVALIDATION\n0 filtered trades completed across all silos. Revalidation threshold of 25 filtered trades per silo not approached. No revalidation action required this session.",
+        "Contention_Applied": false,
+        "Contention_Detail": "",
+        "Rules_Cited": "A-040",
+        "Bull_Override_Checked": true,
+        "Bull_Override_Result": "Not applicable — Crypto regime is RANGE_BOUND and algo gate is CLOSED. Dual confirmation required (BULL regime + OPEN gate) cannot be met. Bull Override dismissed.",
+        "Capital_Sufficient": true,
+        "Portfolio_Heat_Pct": 0,
+        "Monitoring_Items": "BTC 200DMA feed returning N/A — confirm data feed integrity before next session; if restored and BTC above 200DMA, Crypto silo re-evaluates from scratch with no look-back obligation for today's missed session.; GLD, TIP, VIX all returning N/A for GDXJ gate legs — confirm data feed integrity; simultaneous N/A across all three unrelated silos is a potential systemic data feed failure flag.; IPO Candidates tab empty — monitor for new IPO lock-up expiry candidates entering the pipeline.; Kill Switch counters: 1 trade completed against 24-trade (warning) and 36-trade (hard stop) thresholds. No loss %, win rate %, or max gain % triggers breached. Standing log entry required each session.; Cooldown tier: NORMAL (100% of Fixed Bet). No sizing impact on any future deployment this session or next unless tier changes.; Capital Gate: 100% (full capital available, £68). No capital gate restriction in force.; Priority hierarchy provisional: 0 filtered trades completed across all silos against 25-trade revalidation threshold. Flag for revalidation when any silo approaches 25 filtered trades.; Systemic data feed failure protocol: no formal look-back obligation exists if feeds restore next session. A missed session due to N/A feeds is forfeited — no retroactive PROCEED eligibility. Recommend governance team formally codify this as a standing protocol rule to eliminate ambiguity.",
+        "Updated_At": "2026-05-24T12:45:00Z",
+        "Session_Health": "CLEAN",
+        "LLM_Failures": "",
+        "Deputy_Challenge": "CHALLENGE",
+        "Deputy_Severity": "MEDIUM"
       }
     ],
     "Config": [
@@ -626,118 +659,6 @@
     ],
     "Action Log": [
       {
-        "Timestamp": "2026-04-17T13:25:29Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-17T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-18T13:25:33Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-18T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-19T05:43:18Z",
-        "Action_Type": "REGIME_ORCHESTRATOR",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "2W:SIDEWAYS, 1M:SIDEWAYS, 3M:SIDEWAYS",
-        "Outcome": "3 timeframes assessed in 80s"
-      },
-      {
-        "Timestamp": "2026-04-19T05:44:12Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "RANGE_BOUND",
-        "Reference_ID": "MEDIUM | ALIGNED | Avg conviction: 2.3/5",
-        "Description": "All timeframes in sideways regime. Market lacks directional conviction.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-04-19T05:44:21Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "CLOSED",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-04-20T13:25:33Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-20T07:00:00Z",
-        "Reference_ID": "1 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (5d). ENTRY WINDOW OPEN.",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T13:25:32Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-21T07:00:00Z",
-        "Reference_ID": "1 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T18:17:58Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-21T07:00:00Z",
-        "Reference_ID": "1 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN.",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T18:26:44Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-21T07:00:00Z",
-        "Reference_ID": "2 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN. | [MEDIUM] HOLD_EXPIRY_WARNING: XRPGBP (CRYPTO) hold D0/1. Expires in 1 day(s).",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T18:28:37Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-21T07:00:00Z",
-        "Reference_ID": "2 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN. | [MEDIUM] HOLD_EXPIRY_WARNING: XRPGBP (CRYPTO) hold D0/1. Expires in 1 day(s).",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T18:31:11Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-21T07:00:00Z",
-        "Reference_ID": "2 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (4d). ENTRY WINDOW OPEN. | [HIGH] HOLD_EXIT_FAILED: XRPGBP hold expiry auto-exit FAILED: undefined. D1/1. MANUAL EXIT REQUIRED.",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-21T14:59:13Z",
-        "Action_Type": "CAPITAL_CHECK",
-        "Source": "Total: £67.96",
-        "Reference_ID": "Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)",
-        "Description": "Deployable: £61.16 | Fixed Bet: £1000",
-        "Outcome": "Apps Script v1.0"
-      },
-      {
-        "Timestamp": "2026-04-22T13:25:30Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-22T07:00:00Z",
-        "Reference_ID": "3 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (3d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: DNMX lock-up expiry 27 Apr (5d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: CIK_2079292 lock-up expiry 27 Apr (5d). ENTRY WINDOW OPEN.",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-04-23T13:25:30Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-04-23T07:00:00Z",
-        "Reference_ID": "3 alert(s), 0 action(s)",
-        "Description": "[HIGH] IPO_ENTRY_WINDOW: APXT lock-up expiry 25 Apr (2d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: DNMX lock-up expiry 27 Apr (4d). ENTRY WINDOW OPEN. | [HIGH] IPO_ENTRY_WINDOW: CIK_2079292 lock-up expiry 27 Apr (4d). ENTRY WINDOW OPEN.",
-        "Outcome": ""
-      },
-      {
         "Timestamp": "2026-04-24T13:25:31Z",
         "Action_Type": "DAILY_SENTINEL",
         "Source": "2026-04-24T07:00:00Z",
@@ -1011,6 +932,86 @@
       },
       {
         "Timestamp": "2026-05-17T05:44:34Z",
+        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "CLOSED",
+        "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-05-18T13:25:30Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-18T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-19T13:25:36Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-19T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-19T14:59:17Z",
+        "Action_Type": "CAPITAL_CHECK",
+        "Source": "Total: £67.96",
+        "Reference_ID": "Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)",
+        "Description": "Deployable: £61.16 | Fixed Bet: £1000",
+        "Outcome": "Apps Script v1.0"
+      },
+      {
+        "Timestamp": "2026-05-20T13:25:49Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-20T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-21T13:25:36Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-21T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-22T13:25:30Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-22T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-23T13:25:29Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-05-23T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-05-24T05:43:13Z",
+        "Action_Type": "REGIME_ORCHESTRATOR",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "2W:SIDEWAYS, 1M:SIDEWAYS, 3M:SIDEWAYS",
+        "Outcome": "3 timeframes assessed in 75s"
+      },
+      {
+        "Timestamp": "2026-05-24T05:44:03Z",
+        "Action_Type": "REGIME_SYNTHESIS",
+        "Source": "RANGE_BOUND",
+        "Reference_ID": "MEDIUM | ALIGNED | Avg conviction: 3/5",
+        "Description": "All timeframes in sideways regime. Market lacks directional conviction.",
+        "Outcome": "Apps Script: runRegimeSynthesis()"
+      },
+      {
+        "Timestamp": "2026-05-24T05:44:12Z",
         "Action_Type": "CRYPTO_DATA_ASSEMBLER",
         "Source": "S0",
         "Reference_ID": "CRYPTO",
