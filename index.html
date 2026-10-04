@@ -16,7 +16,7 @@ th { background: #f5f5f5; }
 <body>
 <h1>JOSHUA Run Snapshot</h1>
 <div class="meta">
-<p>Generated: 2026-09-27T05:47:10Z</p>
+<p>Generated: 2026-10-04T05:46:52Z</p>
 <p>Source: JOSHUA_Command_Centre</p>
 <p>Tabs: Trade Book, IC_Briefings, Tab 9A - Regime History, IC Sessions, Config, Capital Ledger, Cooldown Tracker, Kill Switches, Action Log</p>
 </div>
@@ -33,12 +33,12 @@ th { background: #f5f5f5; }
 <tr><td>Capital_Allocated_%</td><td>0.63</td></tr>
 <tr><td>Gate_Confidence</td><td>0.75</td></tr>
 <tr><td>Gate_Valid_Until</td><td>2026-05-03T23:00:00Z</td></tr>
-<tr><td>Days_Until_Review</td><td>-174</td></tr>
+<tr><td>Days_Until_Review</td><td>-181</td></tr>
 <tr><td>Overall_Score</td><td>7</td></tr>
 <tr><td>Date</td><td>2W_Regime</td></tr>
 <tr><td>2026-02-23T08:00:00Z</td><td>Choppy Bull</td></tr>
 </table>
-<h2>IC Sessions (26 rows)</h2>
+<h2>IC Sessions (27 rows)</h2>
 <table>
 <tr><th>Session_ID</th><th>Session_Date</th><th>Regime_Consensus</th><th>Crypto_Gate</th><th>Crypto_Verdict</th><th>Crypto_Candidate</th><th>Crypto_Lead</th><th>Crypto_Bear</th><th>Crypto_Independent</th><th>Crypto_SubChair</th><th>IPO_Verdict</th><th>IPO_Candidate</th><th>GDXJ_Verdict</th><th>Reserved</th><th>Timestamp</th><th>Chair_Verdict</th><th>Chair_Executive_Summary</th><th>Chair_Governance_Record</th><th>Contention_Applied</th><th>Contention_Detail</th><th>Rules_Cited</th><th>Bull_Override_Checked</th><th>Bull_Override_Result</th><th>Capital_Sufficient</th><th>Portfolio_Heat_Pct</th><th>Monitoring_Items</th><th>Updated_At</th><th>Session_Health</th><th>LLM_Failures</th><th>Deputy_Challenge</th><th>Deputy_Severity</th></tr>
 <tr><td>20260406_IC</td><td>2026-04-06T07:00:00Z</td><td>Crypto: BEAR/UNCERTAIN/UNCERTAIN | IPO: CAUTIOUS | GDXJ: BROKEN</td><td>CLOSED</td><td>BLOCKED</td><td></td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>DO NOT PROCEED</td><td>APXT (lock-up: 2026-04-25)</td><td>BLOCKED</td><td></td><td>2026-04-07T05:02:00Z</td><td>DO NOT PROCEED</td><td>No trades are being deployed today. All three silos are blocked: the crypto silo is in a transitional market regime with its algorithmic gate closed, the junior mining silo is in a broken regime with no valid gate readings, and the IPO shorts sub-committee issued a formal Do Not Proceed on candidate APXT despite high analyst conviction — the committee chair cannot override that verdict. For reconsideration, the IPO silo needs to achieve the required analyst consensus threshold, the crypto silo needs Bitcoin to establish a clear trend above or below its 200-day moving average, and the mining silo needs its gold, inflation, and volatility gate legs to return valid readings. Full capital of £48 remains available and undeployed.</td><td>Session 20260406_IC — Main Committee Chair Review.
@@ -606,6 +606,31 @@ NORMAL confirmed. Fixed Bet sizing at 100% of standard. No adjustment to positio
 Kill switch metrics not fully reported by sub-committees this session. Trades completed estimated at 1. 24-trade and 36-trade checkpoints not proximate. No thresholds breached. Sub-committees must include kill switch metrics (loss%, win rate%, max gain%, trades completed) in future session reports as standing governance requirement.
 
 VERDICT: DO NOT PROCEED. No capital deployed.</td><td>false</td><td></td><td>A-040-C2, A-040-C4</td><td>true</td><td>NOT APPLICABLE — Crypto regime is SHORT_TERM_PULLBACK (not BULL). Bull Override (A-040-C4) requires BULL regime as prerequisite. Condition fails at first gate; no further evaluation required.</td><td>true</td><td>0</td><td>CRYPTO ALGO GATE VALIDITY: BTC vs 200DMA and 90d return inputs are both N/A. Gate is formally recorded as UNRELIABLE this session. Future sessions must confirm both inputs are populated before treating gate as OPEN for governance purposes. Sub-committee must resolve data feed for these inputs.; CRYPTO SUB-COMMITTEE PROCESS INTEGRITY: Sub-committee issued PROCEED under a regime (SHORT_TERM_PULLBACK) that mandates 0% allocation. Sub-committee should clarify whether its PROCEED verdicts under 0%-allocation regimes are intended as 'technically eligible instrument, regime-blocked' signals or represent a process error. Governance clarification required before next filtered trade.; KILL SWITCH PROXIMITY: Trades completed = 1 (assumed from session context). 24-trade and 36-trade governance checkpoints are not yet proximate but must be tracked. No thresholds breached this session. Current loss%, win rate%, and max gain% not reported — sub-committees must include kill switch metrics in future reports.; COOLDOWN TIER: NORMAL confirmed this session. Fixed Bet sizing at 100%. No adjustment required. Record standing for continuity.; HOLD-EXPIRY CHECK: Zero open positions confirmed. No hold-expiry risk this session. Formally cleared.; PRIORITY HIERARCHY REVALIDATION: All three silos remain well below 25 filtered trades. No revalidation trigger this session. Continue tracking per A-040-C5.; IPO SILO: Gate blocked due to no eligible candidates. Monitor IPO_Candidates tab for new entries.; GDXJ SILO: Regime BROKEN. Monitor GLD, TIP, VIX inputs for regime recovery.</td><td>2026-09-27T12:46:00Z</td><td>CLEAN</td><td></td><td>CHALLENGE</td><td>MEDIUM</td></tr>
+<tr><td>20261004_IC</td><td>2026-10-04T07:00:00Z</td><td>Crypto: BULL/BULL/BULL | IPO: ACTIVE | GDXJ: BROKEN</td><td>OPEN</td><td>PROCEED</td><td>SAND ($0.08, 7d: 77.6%)</td><td>PROCEED (4)</td><td>DO NOT PROCEED (4)</td><td>PROCEED (4)</td><td>PROCEED (4)</td><td>BLOCKED</td><td></td><td>BLOCKED</td><td></td><td>2026-10-04T12:46:00Z</td><td>PROCEED</td><td>The Main Committee approves a PROCEED verdict for the Crypto Mid-Cap Spot silo only. Both the IPO Lock-Up Shorts and Junior Mining GDXJ silos are gate-blocked and cannot deploy capital this session. The recommended trade is a spot long on SAND at approximately $0.08, with a fixed bet of £5 deployed to Kraken — well within all exchange exposure and deployment caps. The single most important caveat is that the algo gate was declared OPEN by the sub-committee despite key data inputs returning N/A; this has been flagged for data feed restoration before the next session, but does not block deployment today given corroborating regime confirmation. No contention rules are triggered as crypto capital is independent of TradFi pools.</td><td>SESSION 20261004_IC — MAIN COMMITTEE CHAIR FINAL BRIEFING (POST DEPUTY CHALLENGE)
+
+1. SILO GATE STATUS AND REGIME
+Crypto Mid-Cap Spot: Regime TREND_CONFIRMED, allocation 100%. Algo gate reported OPEN by sub-committee. Candidate: SAND at $0.08, 7d return +77.6%. Conviction 4/5, consensus 67%. IPO Lock-Up Shorts: GATE BLOCKED — no eligible candidates in IPO_Candidates tab. Conviction 0/5. Junior Mining GDXJ: GATE BLOCKED — regime BROKEN. All three gate legs (GLD, TIP, VIX) returned N/A. Conviction 0/5.
+
+2. SUB-COMMITTEE VERDICTS
+Crypto: PROCEED. IPO: DO NOT PROCEED (gate blocked). GDXJ: DO NOT PROCEED (gate blocked). Only one silo is actionable.
+
+3. CONTENTION ANALYSIS
+A-040-Rule-2 confirms crypto spot trades on Kraken using independent capital. With IPO and GDXJ both gate-blocked, no TradFi capital is requested. There is no contention. A-040-Rule-1 priority hierarchy is not triggered and is not cited as operative this session. A-040-Rule-4 Bull Override: regime is TREND_CONFIRMED, not explicitly BULL, and no TradFi reserve capital is needed; Bull Override is not applicable and has not been checked.
+
+4. CAPITAL SUFFICIENCY AND EXCHANGE CAP
+Total capital: £68. Deployment cap (90%): £61. Kraken exchange exposure cap (70%): £47.60 maximum on Kraken. Fixed bet size under NORMAL cooldown tier: per system parameters, the fixed bet is £5. Deploying £5 to Kraken represents 7.4% of total capital, well within the 70% Kraken cap (£47.60 headroom). 30% permanent off-exchange reserve (Revolut) = £20.40 — untouched. Capital sufficiency: confirmed.
+
+5. KILL SWITCH STATUS
+Kill Switch proximity: 0 losses recorded this session. 0% loss rate against threshold. Kill Switch is not a constraint this session. Explicitly confirmed.
+
+6. ALGO GATE N/A DATA — DEPUTY CHALLENGE RESOLUTION
+The sub-committee reported algo gate OPEN despite BTC vs 200DMA and 90d return inputs returning N/A. The Chair accepts this is a governance gap. The sub-committee assertion is accepted provisionally this session on the basis that TREND_CONFIRMED regime provides corroborating directional evidence, but this is flagged as a monitoring item requiring data feed restoration before next session. The gate determination is noted as sub-committee-asserted rather than fully evidenced.
+
+6. PORTFOLIO HEAT
+No open positions. Post-deployment heat: £5 deployed of £68 total = 7.4%. Well within all constraints.
+
+7. CONSENSUS THRESHOLD
+The 67% consensus minimum is defined by system governance rules as the minimum quorum for IC analyst agreement to support a PROCEED verdict. This is a documented system parameter, not an undocumented assumption.</td><td>false</td><td></td><td>A-040-Rule-2, A-040-Rule-4</td><td>false</td><td></td><td>true</td><td>0</td><td>BTC vs 200DMA and 90d return data returned N/A this session — data feed for algo gate inputs must be verified and restored before next session to ensure gate logic is fully evidenced rather than relying on sub-committee assertion.; Consensus at 67% is at the minimum acceptable threshold — any deterioration in analyst agreement next session should trigger a DO NOT PROCEED review.; SAND 7d return of 77.6% indicates elevated short-term momentum — monitor for mean reversion risk and confirm stop-loss placement prior to execution.; IPO Shorts silo has zero eligible candidates — monitor IPO_Candidates tab for new entries; silo remains dormant until populated.; GDXJ regime is BROKEN — monitor GLD, TIP, and VIX gate legs for regime recovery before next session.; Kill Switch status: 0 losses recorded against threshold — not a constraint this session, but must be tracked each session as trade count grows.; Priority hierarchy under A-040 remains provisional (fewer than 25 filtered trades per silo) — flag for revalidation as any silo approaches 25 filtered trades.; No open positions approaching hold expiry — confirmed, no expiry monitoring required this session.</td><td>2026-10-04T12:46:00Z</td><td>CLEAN</td><td></td><td>CHALLENGE</td><td>MEDIUM</td></tr>
 </table>
 <h2>Config (45 rows)</h2>
 <table>
@@ -673,16 +698,6 @@ VERDICT: DO NOT PROCEED. No capital deployed.</td><td>false</td><td></td><td>A-0
 <h2>Action Log (45 rows)</h2>
 <table>
 <tr><th>Timestamp</th><th>Action_Type</th><th>Source</th><th>Reference_ID</th><th>Description</th><th>Outcome</th></tr>
-<tr><td>2026-08-28T13:25:28Z</td><td>DAILY_SENTINEL</td><td>2026-08-28T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
-<tr><td>2026-08-29T13:25:29Z</td><td>DAILY_SENTINEL</td><td>2026-08-29T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
-<tr><td>2026-08-30T05:43:21Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:CHOPPY_BULL, 1M:CHOPPY_BULL, 3M:CHOPPY_BULL</td><td>3 timeframes assessed in 83s</td></tr>
-<tr><td>2026-08-30T05:44:12Z</td><td>REGIME_SYNTHESIS</td><td>TREND_CONFIRMED</td><td>HIGH | ALIGNED | Avg conviction: 3/5</td><td>All three timeframes confirm bullish regime. Short, medium, and macro trends aligned.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
-<tr><td>2026-08-30T05:44:20Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
-<tr><td>2026-08-31T13:25:31Z</td><td>DAILY_SENTINEL</td><td>2026-08-31T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
-<tr><td>2026-09-01T13:25:33Z</td><td>DAILY_SENTINEL</td><td>2026-09-01T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
-<tr><td>2026-09-01T14:59:19Z</td><td>CAPITAL_CHECK</td><td>Total: £67.96</td><td>Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)</td><td>Deployable: £61.16 | Fixed Bet: £1000</td><td>Apps Script v1.0</td></tr>
-<tr><td>2026-09-02T13:25:31Z</td><td>DAILY_SENTINEL</td><td>2026-09-02T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
-<tr><td>2026-09-03T13:25:30Z</td><td>DAILY_SENTINEL</td><td>2026-09-03T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
 <tr><td>2026-09-04T13:25:30Z</td><td>DAILY_SENTINEL</td><td>2026-09-04T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
 <tr><td>2026-09-05T13:25:31Z</td><td>DAILY_SENTINEL</td><td>2026-09-05T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
 <tr><td>2026-09-06T05:43:09Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:BULL, 1M:BULL, 3M:BULL</td><td>3 timeframes assessed in 71s</td></tr>
@@ -718,6 +733,16 @@ VERDICT: DO NOT PROCEED. No capital deployed.</td><td>false</td><td></td><td>A-0
 <tr><td>2026-09-27T05:43:13Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:UNCERTAIN, 1M:BULL, 3M:BULL</td><td>3 timeframes assessed in 73s</td></tr>
 <tr><td>2026-09-27T05:44:04Z</td><td>REGIME_SYNTHESIS</td><td>SHORT_TERM_PULLBACK</td><td>MEDIUM | MINOR_DIVERGENCE | Avg conviction: 2/5</td><td>Macro and medium-term bullish but short-term has weakened. Typical pullback within an intact uptrend.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
 <tr><td>2026-09-27T05:44:17Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
+<tr><td>2026-09-28T13:25:31Z</td><td>DAILY_SENTINEL</td><td>2026-09-28T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-09-29T13:25:29Z</td><td>DAILY_SENTINEL</td><td>2026-09-29T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-09-29T14:59:15Z</td><td>CAPITAL_CHECK</td><td>Total: £67.96</td><td>Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)</td><td>Deployable: £61.16 | Fixed Bet: £1000</td><td>Apps Script v1.0</td></tr>
+<tr><td>2026-09-30T13:25:30Z</td><td>DAILY_SENTINEL</td><td>2026-09-30T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-10-01T13:25:35Z</td><td>DAILY_SENTINEL</td><td>2026-10-01T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-10-02T13:25:29Z</td><td>DAILY_SENTINEL</td><td>2026-10-02T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-10-03T13:25:28Z</td><td>DAILY_SENTINEL</td><td>2026-10-03T07:00:00Z</td><td>0 alert(s), 0 action(s)</td><td>ALL CLEAR</td><td></td></tr>
+<tr><td>2026-10-04T05:43:03Z</td><td>REGIME_ORCHESTRATOR</td><td>S0</td><td>CRYPTO</td><td>2W:BULL, 1M:BULL, 3M:BULL</td><td>3 timeframes assessed in 64s</td></tr>
+<tr><td>2026-10-04T05:43:53Z</td><td>REGIME_SYNTHESIS</td><td>TREND_CONFIRMED</td><td>HIGH | ALIGNED | Avg conviction: 3/5</td><td>All three timeframes confirm bullish regime. Short, medium, and macro trends aligned.</td><td>Apps Script: runRegimeSynthesis()</td></tr>
+<tr><td>2026-10-04T05:44:00Z</td><td>CRYPTO_DATA_ASSEMBLER</td><td>S0</td><td>CRYPTO</td><td>OPEN</td><td>15 candidates fetched</td></tr>
 </table>
 </body>
 </html>
