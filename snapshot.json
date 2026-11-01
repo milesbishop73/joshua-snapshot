@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-25T06:46:24Z",
+  "generated_at_utc": "2026-11-01T06:47:04Z",
   "source": "JOSHUA_Command_Centre",
   "version": "1.0",
   "tabs": {
@@ -46,7 +46,7 @@
       },
       {
         "Capital_Gate_Status": "Days_Until_Review",
-        "DEPLOY": -202
+        "DEPLOY": -209
       },
       {
         "Capital_Gate_Status": "Overall_Score",
@@ -1051,6 +1051,39 @@
         "LLM_Failures": "",
         "Deputy_Challenge": "CHALLENGE",
         "Deputy_Severity": "LOW"
+      },
+      {
+        "Session_ID": "20261101_IC",
+        "Session_Date": "2026-11-01T07:00:00Z",
+        "Regime_Consensus": "Crypto: SIDEWAYS/SIDEWAYS/CHOPPY_BULL | IPO: ACTIVE | GDXJ: BROKEN",
+        "Crypto_Gate": "OPEN",
+        "Crypto_Verdict": "DO NOT PROCEED",
+        "Crypto_Candidate": "UNI ($7.27, 7d: 5.2%)",
+        "Crypto_Lead": "DO NOT PROCEED (2)",
+        "Crypto_Bear": "DO NOT PROCEED (4)",
+        "Crypto_Independent": "DO NOT PROCEED (5)",
+        "Crypto_SubChair": "DO NOT PROCEED (5)",
+        "IPO_Verdict": "BLOCKED",
+        "IPO_Candidate": "",
+        "GDXJ_Verdict": "BLOCKED",
+        "Reserved": "",
+        "Timestamp": "2026-11-01T14:46:00Z",
+        "Chair_Verdict": "DO NOT PROCEED",
+        "Chair_Executive_Summary": "No trades are being placed today. All three silos are blocked: the Crypto silo's own sub-committee voted against proceeding due to trend exhaustion conditions, the IPO Shorts silo has no eligible candidates in the pipeline, and the Junior Mining silo's market regime is broken. The portfolio sits at zero heat with full capital available. For trading to resume, the most likely near-term catalyst is a Crypto regime shift to BULL — UNI is showing momentum and analyst conviction is at maximum, so that silo could activate quickly if conditions improve.",
+        "Chair_Governance_Record": "Session 20261101_IC. Main Committee Chair final briefing following Deputy Chair challenge (severity: MEDIUM). All three silos are blocked from deployment this session. CRYPTO MID-CAP SPOT: Regime is TREND_EXHAUSTION. Sub-committee returned DO NOT PROCEED with 5/5 conviction on UNI ($7.27). The high conviction is noted but the regime gate is the binding constraint — TREND_EXHAUSTION does not permit new spot entries. Bull override (A-040-C4) was evaluated independently: dual confirmation requires regime BULL AND algo gate OPEN. Regime condition fails; bull override is ineligible on regime grounds. IPO LOCK-UP SHORTS: Gate blocked. No eligible candidates in IPO_Candidates tab. Conviction 0/5. No further analysis required. JUNIOR MINING GDXJ: Gate blocked. Regime is BROKEN. GLD, TIP, and VIX gate legs all unconfirmed. Conviction 0/5. No further analysis required. CONTENTION ANALYSIS: A-040-C2 and A-040-C3 are dormant — no silos are competing for capital. No contention exists. CAPITAL SUFFICIENCY: Total capital £68, deployed £0, available £68. Deployment cap £61 (90%). Cooldown tier NORMAL — Capital Gate at 100% of Fixed Bet. Exchange exposure cap (70%) and 30% Revolut reserve are both satisfied with zero deployment. PORTFOLIO HEAT: 0%. No open positions. Hold expiry check: satisfied, no outstanding deadlines. KILL SWITCH PROXIMITY: 1 trade completed. Win-rate floor (30%) becomes binding at 24 trades. Early-stage trajectory vulnerability flagged as standing monitoring item. PRIORITY HIERARCHY: A-040-C1 provisional hierarchy (IPO Shorts → GDXJ → Crypto) remains in force. No silo approaching 25 filtered trades. Revalidation not yet triggered. VERDICT: DO NOT PROCEED. All silos blocked by regime or candidate gates.",
+        "Contention_Applied": false,
+        "Contention_Detail": "",
+        "Rules_Cited": "A-040-C4",
+        "Bull_Override_Checked": true,
+        "Bull_Override_Result": "NOT APPLICABLE — Crypto regime is TREND_EXHAUSTION, not BULL. The dual confirmation criteria for A-040-C4 require regime BULL AND algo gate OPEN. The regime condition fails independently of the sub-committee verdict. Bull override is therefore ineligible on regime grounds alone.",
+        "Capital_Sufficient": true,
+        "Portfolio_Heat_Pct": 0,
+        "Monitoring_Items": "Kill Switch proximity: 1 trade completed. Win-rate floor (30%) becomes binding at 24 trades. A single loss in the next session would establish a 0% win-rate trajectory against a 30% floor — early-stage structural vulnerability. Flag for review at each session until 10 trades completed.; Priority hierarchy revalidation: Provisional A-040-C1 hierarchy (IPO Shorts → GDXJ → Crypto) remains in force. No silo has approached 25 filtered trades. Continue monitoring trade counts per silo.; Open position hold expiry check: No open positions. No expiry deadlines outstanding. Standing check satisfied for session 20261101_IC.; Crypto regime watch: TREND_EXHAUSTION with UNI showing 5.2% 7d gain and analyst conviction at 5/5. Monitor for regime transition to BULL, which would re-open deployment eligibility subject to algo gate confirmation.; IPO Shorts pipeline: Zero eligible candidates in IPO_Candidates tab. Monitor for new IPO filings with lock-up expiry windows entering the eligible range.; GDXJ regime watch: BROKEN regime. Monitor GLD, TIP, and VIX gate legs for recovery. No deployment until all three legs confirm regime restoration.",
+        "Updated_At": "2026-11-01T14:46:00Z",
+        "Session_Health": "CLEAN",
+        "LLM_Failures": "",
+        "Deputy_Challenge": "CHALLENGE",
+        "Deputy_Severity": "MEDIUM"
       }
     ],
     "Config": [
@@ -1352,86 +1385,6 @@
     ],
     "Action Log": [
       {
-        "Timestamp": "2026-09-25T13:25:30Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-09-25T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-09-26T13:25:28Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-09-26T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-09-27T05:43:13Z",
-        "Action_Type": "REGIME_ORCHESTRATOR",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "2W:UNCERTAIN, 1M:BULL, 3M:BULL",
-        "Outcome": "3 timeframes assessed in 73s"
-      },
-      {
-        "Timestamp": "2026-09-27T05:44:04Z",
-        "Action_Type": "REGIME_SYNTHESIS",
-        "Source": "SHORT_TERM_PULLBACK",
-        "Reference_ID": "MEDIUM | MINOR_DIVERGENCE | Avg conviction: 2/5",
-        "Description": "Macro and medium-term bullish but short-term has weakened. Typical pullback within an intact uptrend.",
-        "Outcome": "Apps Script: runRegimeSynthesis()"
-      },
-      {
-        "Timestamp": "2026-09-27T05:44:17Z",
-        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
-        "Source": "S0",
-        "Reference_ID": "CRYPTO",
-        "Description": "OPEN",
-        "Outcome": "15 candidates fetched"
-      },
-      {
-        "Timestamp": "2026-09-28T13:25:31Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-09-28T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-09-29T13:25:29Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-09-29T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-09-29T14:59:15Z",
-        "Action_Type": "CAPITAL_CHECK",
-        "Source": "Total: £67.96",
-        "Reference_ID": "Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)",
-        "Description": "Deployable: £61.16 | Fixed Bet: £1000",
-        "Outcome": "Apps Script v1.0"
-      },
-      {
-        "Timestamp": "2026-09-30T13:25:30Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-09-30T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
-        "Timestamp": "2026-10-01T13:25:35Z",
-        "Action_Type": "DAILY_SENTINEL",
-        "Source": "2026-10-01T07:00:00Z",
-        "Reference_ID": "0 alert(s), 0 action(s)",
-        "Description": "ALL CLEAR",
-        "Outcome": ""
-      },
-      {
         "Timestamp": "2026-10-02T13:25:29Z",
         "Action_Type": "DAILY_SENTINEL",
         "Source": "2026-10-02T07:00:00Z",
@@ -1705,6 +1658,86 @@
       },
       {
         "Timestamp": "2026-10-25T06:44:15Z",
+        "Action_Type": "CRYPTO_DATA_ASSEMBLER",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "OPEN",
+        "Outcome": "15 candidates fetched"
+      },
+      {
+        "Timestamp": "2026-10-26T14:25:30Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-26T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-10-27T14:25:35Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-27T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-10-27T15:59:16Z",
+        "Action_Type": "CAPITAL_CHECK",
+        "Source": "Total: £67.96",
+        "Reference_ID": "Kraken: £29.91 | IG: £20.00 | Revolut: £18.05 (manual)",
+        "Description": "Deployable: £61.16 | Fixed Bet: £1000",
+        "Outcome": "Apps Script v1.0"
+      },
+      {
+        "Timestamp": "2026-10-28T14:25:31Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-28T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-10-29T14:25:35Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-29T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-10-30T14:25:28Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-30T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-10-31T14:25:28Z",
+        "Action_Type": "DAILY_SENTINEL",
+        "Source": "2026-10-31T07:00:00Z",
+        "Reference_ID": "0 alert(s), 0 action(s)",
+        "Description": "ALL CLEAR",
+        "Outcome": ""
+      },
+      {
+        "Timestamp": "2026-11-01T06:43:32Z",
+        "Action_Type": "REGIME_ORCHESTRATOR",
+        "Source": "S0",
+        "Reference_ID": "CRYPTO",
+        "Description": "2W:SIDEWAYS, 1M:SIDEWAYS, 3M:CHOPPY_BULL",
+        "Outcome": "3 timeframes assessed in 93s"
+      },
+      {
+        "Timestamp": "2026-11-01T06:44:27Z",
+        "Action_Type": "REGIME_SYNTHESIS",
+        "Source": "TREND_EXHAUSTION",
+        "Reference_ID": "MEDIUM | DIVERGING | Avg conviction: 3/5",
+        "Description": "Macro trend still bullish but shorter timeframes have deteriorated. Possible trend exhaustion or regime transition.",
+        "Outcome": "Apps Script: runRegimeSynthesis()"
+      },
+      {
+        "Timestamp": "2026-11-01T06:44:38Z",
         "Action_Type": "CRYPTO_DATA_ASSEMBLER",
         "Source": "S0",
         "Reference_ID": "CRYPTO",
